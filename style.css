@@ -1,3 +1,76 @@
-h1{
-  color:green;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin:0;
+    width:auto;
+    height:auto;
+    padding:0;
+}
+nav{
+    width:100%;
+    background-color:#ffff00;
+    padding:15px 0 15px 0;
+    margin:0;
+}
+nav ul{
+
+}
+nav ul li{
+    display:inline-block;
+    margin-left:20px;
+}
+nav ul li button{
+    color:rgb(174, 0, 174);
+    text-decoration:none;
+    font-size:30px;
+    font-family:"Roboto";
+    display:inline-block;
+    border:none;
+    background:transparent;
+    transform:rotate(0deg);
+    transition-duration: 3000ms;
+    transform:scale(1);
+    transition-duration:150ms;
+}
+#popa:hover{
+    transform:scale(1.5, 0.85);
+    transition-duration: 150ms;
+}
+#popa:active{
+    transform:scale(-1, -0.85);
+    transition-duration: 150ms;
+}
+#cristina:active{
+    transform:scale(1.2, 10) translate(0, 10px);
+    transition-duration: 150ms;
+}
+#dana:active{
+    transform: translate(300px, 70px);
+    transition-duration:250ms;
+}
+nav ul li button:hover{
+    transform:scale(1.2, 2);
+    transition-duration:150ms;
+    cursor:pointer;
+}
+nav ul li button:active{
+    color:blue;
+    cursor:pointer;
+}
+#logo1 #logo{
+    width:200px;
+    height:auto;
+    background: transparent;
+}
+#logo1{
+    transform:rotate(0deg);
+    transition-duration:3s;
+    background:transparent;
+    border:none;
+}
+#logo1:active{
+    transform:rotate(21600deg);
+    transition-duration:10s;
+}
+#logo1:hover{
+    cursor:pointer;
 }

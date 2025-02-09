@@ -11,13 +11,13 @@ function noF(){
         document.getElementById("no").style.display="none";
     switch(cnt){
         case 0:
-            document.getElementById("title").innerHTML="Sigur?";
+            document.getElementById("title").innerHTML="Vrei???";
         break;
         case 1:
-            document.getElementById("title").innerHTML="Sigur, sigur?";
+            document.getElementById("title").innerHTML="Chiar nu vrei?";
         break;
         case 2:
-            document.getElementById("title").innerHTML="Chiar esti sigura?";
+            document.getElementById("title").innerHTML="Deci vrei?";
         break;
         case 3:
             document.getElementById("title").style.fontFamily="Times New Roman";

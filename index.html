@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Document</title>
-    <link rel="icon" type="image/x-icon" href="favicon1.png">
+    <link rel="icon" type="image/x-icon" href="pinkheart2.png">
     <link rel="stylesheet" href="style.css" id="bluestyle">
-    <script src="script.js"></script>
-    <style>
-	    @import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+	<script src="script.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@font-face {
+    font-family: CookieMonster;
+    src: url(Cookiemonster-gv11.ttf);
+}
+@font-face{
+    font-family: SalmonSeason;
+    src: url(Salmon\ Season.otf);
+}  
 html{
     height: 98%;
 }
@@ -23,6 +31,7 @@ body{
     overflow:hidden;
 }
 #title{
+    margin-top:200px;
     font-size:60px;
     font-family:Kristi;
 }
@@ -34,34 +43,38 @@ body{
 button{
     width:200px;
     height:100px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
-    font-size:20px;
+    font-size:40px;
     cursor:pointer;
     color:white;
+    font-family:SalmonSeason;
 }
 #yes{
-    background-color:#00bd00;
+    background-color:#07d800;
 }
 #no{
-    background-color:#ff0000;
+    background-color:#ff5252;
 }
 button:hover{
     transform:scale(1.1);
 }
 #heart{
     display:none;
-    width:700px;
+    width:400px;
     height:auto;
+    position:absolute;
+    top:25%;
+
 }
-    </style>
+	</style>
 </head>
 <body>
     <p align="center" id="title">Will you be my Valentine?</p>
     <div id="bigdiv">
-        <button id="yes" onclick="yesF()">Yes</button>
+        <button id="yes" onclick="yesF()">Da</button>
         <div style="width:10px"></div>
-        <button id="no" onclick="noF(0)">No</button>
+        <button id="no" onclick="noF(0)">Nu</button>
         <img id="heart" src="monkey1.gif" alt="Heart">
     </div>
 </body>

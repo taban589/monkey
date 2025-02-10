@@ -7,10 +7,13 @@ function noF(){
     var currentHeight=myYes.clientHeight;
     myYes.style.width=(currentWidth+changerW)+"px";
     myYes.style.height=(currentHeight+changerH)+"px";
-    if(myYes.clientWidth>=1700)
+    if(myYes.clientWidth>=1700){
         document.getElementById("no").style.display="none";
+        document.getElementById("title").innerHTML="NA! Ce ai sa faci acum?";
+    }
     switch(cnt){
         case 0:
+            document.getElementById("title").style.fontFamily="CookieMonster";
             document.getElementById("title").innerHTML="Vrei???";
         break;
         case 1:
@@ -20,14 +23,14 @@ function noF(){
             document.getElementById("title").innerHTML="Deci vrei?";
         break;
         case 3:
-            document.getElementById("title").style.fontFamily="Times New Roman";
-            document.getElementById("title").innerHTML="Haideeee";
+            document.getElementById("title").innerHTML="HAIDEEEE";
         break;
         case 4:
-            document.getElementById("title").innerHTML="Te roooooog";
+            document.getElementById("title").innerHTML="TE ROOOOOG";
         break;
         case 5:
-            document.getElementById("title").innerHTML="Eu zic sa te razgandesti.";
+            document.getElementById("title").innerHTML="eu zic sa te razgandesti.";
+            document.getElementById("title").style.marginTop="100px";
         break;
         case 6:
             document.getElementById("title").innerHTML="RAZGANDESTE-TE";
@@ -35,11 +38,16 @@ function noF(){
         case 7:
             myYes.style.fontSize="200px";
             document.getElementById("title").innerHTML="RAZGANDESTE-TEEEEEEEEE";
+            document.getElementById("title").style.marginTop="0";
             myYes.style.width=(currentWidth+500)+"px";
             myYes.style.height=(currentHeight+500)+"px";
         break;
         case 8:
             document.getElementById("no").style.display="none";
+            document.getElementById("title").style.display="none";
+            myYes.style.width="device-width";
+            myYes.style.height="device-height";
+            myYes.style.border="10px solid pink";
         break;
     }
     cnt++;
